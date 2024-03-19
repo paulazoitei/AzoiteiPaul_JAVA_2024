@@ -28,9 +28,19 @@ public class Compulsory {
         visitingTimetable.put(DayOfWeek.FRIDAY, new Pair<>(LocalTime.of(9, 30), LocalTime.of(19, 30)));
         visitingTimetable.put(DayOfWeek.SATURDAY, new Pair<>(LocalTime.of(7, 0), LocalTime.of(22, 0)));
         visitingTimetable.put(DayOfWeek.SUNDAY, new Pair<>(LocalTime.of(8, 0), LocalTime.of(21, 0)));
+        Map<DayOfWeek, Pair<LocalTime, LocalTime>> visitingTimetable1 = new LinkedHashMap<>();
+        visitingTimetable1.put(DayOfWeek.MONDAY, new Pair<>(LocalTime.of(11, 0), LocalTime.of(18, 0)));
+        visitingTimetable1.put(DayOfWeek.TUESDAY, new Pair<>(LocalTime.of(11, 30), LocalTime.of(18, 30)));
+        visitingTimetable1.put(DayOfWeek.WEDNESDAY, new Pair<>(LocalTime.of(11, 0), LocalTime.of(18, 45)));
+        visitingTimetable1.put(DayOfWeek.THURSDAY, new Pair<>(LocalTime.of(3, 0), LocalTime.of(18, 0)));
+        visitingTimetable1.put(DayOfWeek.FRIDAY, new Pair<>(LocalTime.of(5, 30), LocalTime.of(19, 30)));
+        visitingTimetable1.put(DayOfWeek.SATURDAY, new Pair<>(LocalTime.of(2, 0), LocalTime.of(22, 0)));
+        visitingTimetable1.put(DayOfWeek.SUNDAY, new Pair<>(LocalTime.of(4, 0), LocalTime.of(21, 0)));
+        cr1.setVisitingTimetable(visitingTimetable1);
+
         c1.setVisitingTimetable(visitingTimetable);
         s1.setVisitingTimetable(visitingTimetable);
-        cr1.setVisitingTimetable(visitingTimetable);
+
 
         System.out.println(c1);
         System.out.println(s1);
