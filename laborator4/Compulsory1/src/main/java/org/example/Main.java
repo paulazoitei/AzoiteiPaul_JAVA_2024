@@ -1,5 +1,8 @@
 package org.example;
 
+import com.github.javafaker.Faker;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -7,6 +10,10 @@ import java.util.stream.Collectors;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+        Faker faker = new Faker();
+        String name = faker.name().fullName();
+        System.out.println(name);
         List<Person> persons = generateRandomPersons(10);
         List<Driver> drivers = persons.stream()
                 .filter(person -> person instanceof Driver)
@@ -46,6 +53,9 @@ public class Main {
 
         return persons;
     }
+
+
+    
 
 
         }
