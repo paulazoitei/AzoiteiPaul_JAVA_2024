@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.example","l":"ConfigPanel"},{"p":"org.example","l":"ControlPanel"},{"p":"org.example","l":"DrawingPanel"},{"p":"org.example","l":"Main"},{"p":"org.example","l":"MainFrame"},{"p":"org.example","l":"DrawingPanel.Stick"},{"p":"org.example","l":"DrawingPanel.Stone"}];updateSearchResults();
